@@ -2,19 +2,26 @@
 using Android.Content.PM;
 using Android.OS;
 using Avalonia.Android;
+using ColorMC.Core.Objs;
+using ColorMC.Core.Utils;
+using ColorMC.Core;
+using ColorMC.Gui;
+using ColorMC.Gui.Objs;
+using ColorMC.Gui.Utils;
 
 namespace ColorMC.Android;
 
-[Activity(Label = "temp.Android", 
+[Activity(Label = "ColorMC", 
     Theme = "@style/MyTheme.NoActionBar", 
-    Icon = "@drawable/icon", 
-    LaunchMode = LaunchMode.SingleTop, 
-    ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize, 
+    Icon = "@drawable/icon",
+    MainLauncher = true,
+    ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.UiMode, 
     ScreenOrientation = ScreenOrientation.SensorLandscape)]
-public class MainActivity : AvaloniaMainActivity
+public class MainActivity : AvaloniaMainActivity<App>
 {
-    protected void OnCreate(Bundle savedInstanceState)
+    protected override void OnCreate(Bundle savedInstanceState)
     {
+        ColorMCGui.StartPhone(GetExternalFilesDir(null) + "/");
 
         base.OnCreate(savedInstanceState);
     }
