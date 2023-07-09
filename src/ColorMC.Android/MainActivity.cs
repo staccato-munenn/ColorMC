@@ -2,20 +2,15 @@
 using Android.Content.PM;
 using Android.OS;
 using Avalonia.Android;
-using ColorMC.Core.Objs;
-using ColorMC.Core.Utils;
-using ColorMC.Core;
 using ColorMC.Gui;
-using ColorMC.Gui.Objs;
-using ColorMC.Gui.Utils;
 
 namespace ColorMC.Android;
 
-[Activity(Label = "ColorMC", 
-    Theme = "@style/MyTheme.NoActionBar", 
+[Activity(Label = "ColorMC",
+    Theme = "@style/MyTheme.NoActionBar",
     Icon = "@drawable/icon",
     MainLauncher = true,
-    ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.UiMode, 
+    ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.UiMode,
     ScreenOrientation = ScreenOrientation.SensorLandscape)]
 public class MainActivity : AvaloniaMainActivity<App>
 {
