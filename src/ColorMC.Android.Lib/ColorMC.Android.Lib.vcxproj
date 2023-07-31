@@ -154,9 +154,12 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\temp_code\FoldCraftLauncher\FCLauncher\src\main\jni\awt_xawt\xawt_fake.c" />
     <ClCompile Include="ColorMC_Android_Lib.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\temp_code\FoldCraftLauncher\FCLauncher\src\main\jni\gl\gl.h" />
+    <ClInclude Include="..\..\..\..\temp_code\FoldCraftLauncher\FCLauncher\src\main\jni\gl\glext.h" />
     <ClInclude Include="ColorMC_Android_Lib.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>

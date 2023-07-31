@@ -2,9 +2,26 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="ColorMC_Android_Lib.cpp" />
+    <ClCompile Include="..\..\..\..\temp_code\FoldCraftLauncher\FCLauncher\src\main\jni\awt_xawt\xawt_fake.c">
+      <Filter>awt_xawt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ColorMC_Android_Lib.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="..\..\..\..\temp_code\FoldCraftLauncher\FCLauncher\src\main\jni\gl\gl.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\temp_code\FoldCraftLauncher\FCLauncher\src\main\jni\gl\glext.h">
+      <Filter>gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="awt_xawt">
+      <UniqueIdentifier>{111afd60-ebbb-45f2-8765-48f161e8a07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gl">
+      <UniqueIdentifier>{9a330425-5ea5-4216-9454-f5585127cb90}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
