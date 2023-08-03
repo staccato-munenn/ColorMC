@@ -48,7 +48,7 @@ dotnet build
 
 - windows和macOs系统，解压即可双击启动
 - Linux系统安装包后可以在桌面或菜单中直接启动
-AppImage可以直接启动
+- AppImage可以在Linux上直接启动
 
 启动器启动后若有更新会提示下载并更新
 
@@ -69,6 +69,7 @@ AppImage可以直接启动
   - instances      游戏实例
   - libraries      游戏运行库
   - versions       游戏版本储存
+- tool        工具文件夹
 - config.json   核心配置文件
 - gui.json      GUI配置文件
 - count.dat     游戏统计储存
@@ -125,10 +126,10 @@ ColorMC的启动游戏实例需要一个`账户`，账户可以是以下几种�
 窗口打开后，点击右上角的`添加账户`可以开始新建账户  
 ![](pic7.png)
 
-双击账户列表中的账户可以切换账户
+双击账户列表中的账户可以切换账户  
 ![](pic8.png)  
 
-右键账户可以呼出菜单
+右键账户可以呼出菜单  
 ![](pic9.png)  
 
 ## 添加游戏实例
@@ -139,7 +140,7 @@ ColorMC的启动游戏实例需要一个`账户`，账户可以是以下几种�
 添加游戏实例有3种方式
 
 - 从头新建实例  
-![](pic2.png)
+![](pic2.png)  
 从头新建实例很简单，只需要填写实例名字，选择版本等信息，最后点击右下角的`添加`按键即可添加  
 也可以从在线的整合包来添加实例  
 点击`在线搜索整合包`可以打开此窗口
@@ -162,12 +163,12 @@ ColorMC的启动游戏实例需要一个`账户`，账户可以是以下几种�
 ![](pic11.png)  
 再次双击可以开始下载整合包
 
-在下载前若保持添加实例窗口开启  
+在下载前若保持`添加实例窗口`开启  
 整合包下载完成后会自动填入`实例名字`与`游戏分组`信息
 
 ## 启动游戏实例
 
-在启动器左侧选择好需要启动的游戏实例  
+在启动器主界面选择好需要启动的游戏实例  
 ![](pic12.png)  
 选中时会有蓝色框进行包裹  
 可以点击右边的`启动实例`按钮启动  
@@ -179,59 +180,71 @@ ColorMC的启动游戏实例需要一个`账户`，账户可以是以下几种�
 或右键游戏实例，选择`修改实例`可以打开窗口  
 
 游戏实例设置主要有
-- 版本设置
-![](pic16.png)  
+- 版本设置  
 设置游戏的版本，Mod加载器，整合包信息等
-- 启动参数
-![](pic27.png)  
+![](pic16.png)  
+可以检测整合包更新  
+![](pic46.png)  
+![](pic47.png)  
+- 启动参数  
 设置游戏启动时使用的参数
-- Mod列表
-![](pic28.png)  
+![](pic27.png)  
+- Mod列表  
 查看游戏实例的Mod  
+自动检测modid冲突
+![](pic48.png)  
 可以查看Mod的基础信息  
-可以检测Mod依赖  
-![](pic29.png)  
+![](pic28.png)  
+可以检测Mod依赖\更新等  
 ![](pic30.png)  
 检测标记的Mod更新  
-![](pic31.png)  
 ![](pic32.png)  
-- 地图列表
+![](pic29.png)  
+选择项目右键可以打开菜单  
+![](pic31.png)  
+- 地图列表  
+查看游戏实例的地图  
 ![](pic33.png)  
-查看游戏实例的地图
-- 资源包
-![](pic34.png)  
-查看游戏实例的资源包
-- 游戏截图
-![](pic35.png)  
-查看游戏实例内的截图
-- 服务器列表
-![](pic36.png)  
-查看游戏实例的服务器信息
-- 光影包
-![](pic37.png)  
-查看游戏实例的光影包信息
-- 结构文件
-![](pic38.png)  
-查看游戏实例的结构文件，包括投影Mod的结构文件
-- 导出
-![](pic39.png)  
-导出游戏实例
+选择世界后右键可以打开菜单  
+![](pic49.png)  
+- 资源包  
+查看游戏实例的资源包  
+![](pic34.png)
+- 游戏截图  
+查看游戏实例内的截图  
+![](pic35.png)
+- 服务器列表  
+查看游戏实例的服务器信息  
+![](pic36.png)
+- 光影包  
+查看游戏实例的光影包信息  
+![](pic37.png)
+- 结构文件  
+查看游戏实例的结构文件，包括投影Mod的结构文件  
+![](pic38.png)
 
 ## 游戏实例配置文件修改
 
 打开游戏实例设置窗口后，在版本设置的最下面点击`修改配置文件`按钮  
+![](pic50.png)  
 或在地图列表内右键世界点击`修改配置`按钮可以打开窗口  
-![](pic17.png)  
-![](pic18.png)  
+打开窗口后可以查看\修改配置文件  
 在左上角的选择框可以选择配置文件  
 过滤器会选出名字包含的文件  
-NBT编辑器下，可以通过右键来打开菜单进行编辑
-
+![](pic17.png)  
+内置有NBT修改器，若打开的是NBT格式文件，或地图文件，可以进行NBT修改  
+![](pic18.png)  
+![](pic51.png)  
+NBT编辑器下，可以通过右键来打开菜单进行编辑  
+![](pic52.png)  
+地图编辑模式下，可以进行方块或者实体的查找  
+![](pic53.png)  
 修改完配置文件后需要点击保存修改或按下快捷键`Com + S`才会保存
 
 ## 游戏实例日志文件查看
 
 打开游戏实例设置窗口后，在版本设置的最下面点击`查看运行日志`按钮  
+![](pic54.png)  
 或在主界面右键实例点击`运行日志`按钮可以打开窗口  
 ![](pic19.png)  
 该页面会加载所有logs/下的日志文件，在上方选择后可以打开文件  
@@ -240,44 +253,65 @@ NBT编辑器下，可以通过右键来打开菜单进行编辑
 
 测试启动用于检测游戏启动时的日志信息
 
+## 游戏实例导出
+
+打开游戏实例设置窗口后，在版本设置的最下面点击`导出游戏实例`按钮  
+![](pic55.png)  
+打开后可以进行导出类型的选择
+![](pic39.png)  
+若为主流整合包，可以设置Mod在线下载  
+![](pic56.png)  
+文件选择可以将所需文件放进压缩包内  
+![](pic57.png)  
+文件在线下载可以选择文件设置下载路径  
+![](pic58.png)  
+选择完毕，并填写所需信息后即可开始导出  
+![](pic59.png)  
+
 ## 启动器设置
 
 在启动器主页面点击`启动器设置`按钮可以打开窗口  
-
+![](pic60.png)  
 启动器设置主要有
-- 界面设置
+- 界面设置  
+调节启动器界面显示等  
 ![](pic41.png)  
-调节启动器界面显示等
 例如启动器的主题色，背景颜色  
 启动器的字体，窗口透明方式等
-- 网络设置
-![](pic15.png)  
+- 网络设置  
 调节启动器联网功能  
+![](pic15.png)  
 在文件下载过程中，不可修改代理设置
-- 启动设置
-![](pic42.png)  
+- 启动设置  
 调节游戏启动参数等  
+![](pic42.png)  
 例如启动前，启动后运行  
 游戏窗口大小等
-- Java路径
-![](pic43.png)  
-调节目前设置的Java
-- 客户端定制
+- Java路径  
+调节目前设置的Java  
+![](pic43.png)
+- 客户端定制  
+给服主使用的定制功能  
 ![](pic44.png)  
-给服主使用的定制功能
-- 配置文件
+可以自定义UI界面或开启自定义音乐
+- 配置文件  
+启动器配置文件  
 ![](pic45.png)  
-启动器配置文件
-- 关于 启动器说明
+- 关于  
+启动器说明
 
 ## Live2D人物显示
 
 在`启动器设置`的`界面设置`内，往下拖动有`Live2D人物设置`选项  
+![](pic61.png)  
 在使用Live2D人物模型显示之前，需要先安装[Core](https://www.live2d.com/download/cubism-sdk/download-native/)  
-将下载好的压缩包解压后，复制`dll`或`so`文件到启动器二进制根目录下，然后重启启动器  
+将下载好的压缩包解压后，复制`dll`或`so`文件到启动器二进制根目录下
+![](pic62.png)  
+注意：不同系统需要放的二进制文件不一样  
+然后重启启动器  
 再次打开设置页面找到`Live2D人物设置`，若能正确识别Core版本则安装成功  
 然后就可以选择模型并加载  
-模型支持model3和moc3，不支持其他版本
+模型只支持model3和moc3，不支持其他版本
 
 在主界面显示人物后，可以点击人物进行互动，操作等  
 ![](pic24.png)  
@@ -294,21 +328,114 @@ NBT编辑器下，可以通过右键来打开菜单进行编辑
 - 服务器同步 启动前同步游戏文件
 - 自定义音乐 在启动器启动时循环播放音乐，支持网易云的音乐链接
 
+自定义UI使用axaml格式，默认的模板为
+```xml
+<view:CustomPanelControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:ColorMC.Gui.UI.Controls.Custom"
+    xmlns:views="clr-namespace:ColorMC.Gui.UI.Controls"
+    xmlns:views1="clr-namespace:ColorMC.Gui.UI.Controls.Main"
+    Title="自定义标题"
+    mc:Ignorable="d">
+    <Panel>
+        <StackPanel
+            Margin="0,0,5,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom">
+            <Button
+                Width="100"
+                Height="25"
+                Margin="5,0,0,5"
+                Command="{Binding Launch}"
+                Content="启动游戏" />
+            <Button
+                Width="100"
+                Height="25"
+                Margin="5,0,0,5"
+                Command="{Binding Setting}"
+                Content="启动器设置" />
+            <Button
+                Width="100"
+                Height="25"
+                Margin="5,0,0,5"
+                Command="{Binding OpUrl}"
+                CommandParameter="Https://www.baidu.com"
+                Content="打开网页" />
+            <Button
+                Width="100"
+                Height="25"
+                Margin="5,0,0,5"
+                Command="{Binding User}"
+                Content="编辑账户" />
+            <Button
+                Width="100"
+                Height="25"
+                Margin="5,0,0,5"
+                Command="{Binding Skin}"
+                Content="查看皮肤" />
+        </StackPanel>
+        <Label
+            Margin="10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Background="#FFEEEEEE"
+            Content="xxx服务器专用客户端"
+            FontSize="20"
+            Foreground="#FF000000" />
+        <views:ServerMotdControl Margin="5" IPPort="{Binding Server}" />
+        <views1:GameControl
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            DataContext="{Binding Game}" />
+        <StackPanel
+            Margin="10,80,10,10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Orientation="Vertical">
+            <Image
+                Width="80"
+                Height="80"
+                Margin="10,0,10,0"
+                HorizontalAlignment="Center"
+                Source="{Binding Head}" />
+            <Label
+                Margin="0,5,0,5"
+                HorizontalContentAlignment="Center"
+                Content="{Binding UserName}" />
+            <Label
+                Margin="0,5,0,5"
+                HorizontalContentAlignment="Center"
+                Content="{Binding UserType}" />
+        </StackPanel>
+    </Panel>
+</view:CustomPanelControl>
+```
+UI使用Avalonia的标准页面编写即可  
+[AXAML](https://docs.avaloniaui.net/docs/next/basics/user-interface/introduction-to-xaml)  [UI控件](https://docs.avaloniaui.net/docs/next/basics/user-interface/controls/builtin-controls)
+
 ## 游戏实例添加资源
 
-打开游戏实例设置窗口后，在Mod列表，地图列表等点击左侧的`A`按钮    
+打开游戏实例设置窗口后，在Mod列表，地图列表等点击左侧的`添加`按钮  
+![](pic64.png)  
 或在主界面右键实例点击`添加资源`按钮可以打开窗口  
-![](pic20.png)  
+![](pic63.png)  
 添加资源主要用于下载游戏资源，例如Mod，地图，材质包等  
-在上方可以选择来筛选内容，双击后打开版本列表，双击版本可以开始下载资源
+![](pic20.png)  
+在上方可以选择来筛选内容  
+![](pic65.png)  
+双击后打开版本列表，双击版本可以开始下载资源  
+![](pic66.png)  
 
 ## 游戏实例Mod列表
 
 打开游戏实例设置窗口后，在Mod列表可以进行游戏实例的Mod操作
-![](pic21.png)  
+![](pic28.png)  
 双击Mod项目可以`启用/禁用`Mod  
-
-左侧的按钮功能分别是
+![](pic21.png)  
+上方的按钮功能为
 - 导入Mod 从现有文件添加到游戏实例中
 - 添加Mod 从网上下载资源
 - 刷新 刷新列表
@@ -318,7 +445,9 @@ NBT编辑器下，可以通过右键来打开菜单进行编辑
 
 可以拖拽`jar文件`到列表中来添加Mod  
 按住`Shift键`可以多选Mod  
-右键可以打开菜单，进行操作
+右键可以打开菜单，进行操作  
 ![](pic22.png)  
 
-## 游戏实例服务器包
+## 游戏实例服务器包与同步
+
+待补充
