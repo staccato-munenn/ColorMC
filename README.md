@@ -2,7 +2,7 @@
 
 [English](./README_EN.md)
 
-使用dotnet7作为运行环境，XAML作为前端语言，C#作为后端语言
+使用dotNet 7作为运行环境，XAML作为前端语言，C#作为后端语言
 
 [用户手册](./guide/Main.md)
 
@@ -26,7 +26,7 @@ git clone https://github.com/Coloryr/ColorMC.git
 cd ColorMC
 ```
 
-### 安装.Net7
+### 安装dotNet7
 
 - Windows/Mac OS
 [下载](https://dotnet.microsoft.com/zh-cn/download/dotnet/7.0)里面的SDK安装包安装即可
