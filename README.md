@@ -13,7 +13,7 @@
 ## 支持平台
 - Linux
 - Windows
-- macOs
+- Mac OS
 
 Linux由于发行版过于复杂，每个人的电脑兼容性都不一样，如果打不开可以尝试修改`/home/{user}/ColorMC/gui.json`
 
@@ -28,18 +28,18 @@ cd ColorMC
 
 ### 安装.Net7
 
-- Windows/macOs
+- Windows/Mac OS
 [下载](https://dotnet.microsoft.com/zh-cn/download/dotnet/7.0)里面的SDK安装包安装即可
 - Linux
 [教程](https://learn.microsoft.com/zh-cn/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website)
 
 ```
-# ubuntu
+# Ubuntu
 $ wget https://packages.microsoft.com/config/ubuntu/22.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
 $ rm packages-microsoft-prod.deb
 
-# debian
+# Debian
 $ wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
 $ rm packages-microsoft-prod.deb
