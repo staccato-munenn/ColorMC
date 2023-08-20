@@ -5,10 +5,10 @@
 A new Minecraft Launcher  
 ![](/image/pic.png)
 
-## Support Platform
+## Supported Platform
 - Linux
 - Windows
-- macOs
+- Mac OS
 
 Due to the complexity of Linux distribution, everyone's compatibility is different. If it cannot be opened it, you can try modifying `/home/{user}/ColorMC/gui.json`
 
@@ -21,20 +21,20 @@ git clone https://github.com/Coloryr/ColorMC.git
 cd ColorMC
 ```
 
-### Insatll .Net7
+### Insatll dotNet7
 
-- Windows/macOs
+- Windows/Mac OS
 [Download](https://dotnet.microsoft.com/zh-cn/download/dotnet/7.0)
 - Linux
 [Doc](https://learn.microsoft.com/zh-cn/dotnet/core/install/linux?WT.mc_id=dotnet-35129-website)
 
 ```
-# ubuntu
+# Ubuntu
 $ wget https://packages.microsoft.com/config/ubuntu/22.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
 $ rm packages-microsoft-prod.deb
 
-# debian
+# Debian
 $ wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
 $ rm packages-microsoft-prod.deb
@@ -55,11 +55,11 @@ $ dotnet run
 ```
 
 ## Project description
-- ColorMC.Core 启动器底层核心
-- ColorMC.Cmd CLI模式 (已放弃)
-- ColorMC.Gui Gui模式
-- ColorMC.Launcher 启动器
-- ColorMC.Test 用于启动器核心测试
+- ColorMC.Core Basically core of Launcher
+- ColorMC.Cmd CLI mode (No longer support)
+- ColorMC.Gui Gui mode
+- ColorMC.Launcher Launcher
+- ColorMC.Test For launcher core testing
 
 ## Skin View
 
